@@ -7,7 +7,7 @@ import logo from "./../assets/logo-text.png"
 const Nav = () => {
     
     return (
-        <div className="flex justify-between container mx-auto m-2 p-2 items-center sticky">
+        <div className="flex justify-between container mx-auto p-2 items-center  bg-white sticky top-0 " >
             <div>
             <img src={logo} alt="Logo" />
             </div>
@@ -24,7 +24,9 @@ const Nav = () => {
                 <button className="btn btn-ghost">Sign In</button>
                 <button className="btn btn-active btn-secondary rounded-4xl">Sign Up</button>
             </div>
+           
         </div>
+         
     )
 }
 
