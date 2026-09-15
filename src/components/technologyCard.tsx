@@ -2,10 +2,12 @@ import type { Itechnology } from "../type/type";
 
 export interface TechnologyCardProps {
     technology : Itechnology
+   
+    
 }
 
-const TechnologyCard = ({ technology }: TechnologyCardProps) => {
-    
+const TechnologyCard = ({ technology  }: TechnologyCardProps) => {
+   
 
   const {
     name,
@@ -67,7 +69,7 @@ const TechnologyCard = ({ technology }: TechnologyCardProps) => {
         </div>
 
         {/* Button */}
-        <button className="btn bg-slate-950 hover:bg-slate-800 text-white border-0 rounded-lg w-full mt-3">
+        <button  className="btn bg-slate-950 hover:bg-slate-800 text-white border-0 rounded-lg w-full mt-3">
           Add to Stack
         </button>
 
