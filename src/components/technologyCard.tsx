@@ -1,13 +1,26 @@
+import { toast } from "react-toastify";
 import type { Itechnology } from "../type/type";
 
 export interface TechnologyCardProps {
     technology : Itechnology
-   
+   added: Itechnology[];
+  setAdded: React.Dispatch<React.SetStateAction<Itechnology[]>>;
     
 }
 
-const TechnologyCard = ({ technology  }: TechnologyCardProps) => {
+const TechnologyCard = ({ technology ,added,setAdded }: TechnologyCardProps) => {
    
+  const handleButton =()=>{
+  const alreadyAdded = added.find(r=> r.name === technology.name) 
+  if(alreadyAdded){
+    toast.error("Already added")
+    return
+  }
+       setAdded(prev=>[...prev,technology])
+       toast.success(`${technology.name} is selected`)
+    
+   
+  }
 
   const {
     name,
@@ -69,7 +82,7 @@ const TechnologyCard = ({ technology  }: TechnologyCardProps) => {
         </div>
 
         {/* Button */}
-        <button  className="btn bg-slate-950 hover:bg-slate-800 text-white border-0 rounded-lg w-full mt-3">
+        <button onClick={handleButton}  className="btn bg-slate-950 hover:bg-slate-800 text-white border-0 rounded-lg w-full mt-3">
           Add to Stack
         </button>
 
