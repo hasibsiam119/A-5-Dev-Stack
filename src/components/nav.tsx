@@ -13,7 +13,7 @@ const Nav = () => {
             </div>
             <div>
                 <ul className="flex gap-4">
-                    <li className="text-pink-600"><a href="#">Home</a></li>
+                    <li className="text-pink-600 font-semibold"><a href="#">Home</a></li>
                     <li><a href="#">Technologies</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">About</a></li>

@@ -26,7 +26,7 @@ const Technologies = ({ technologyDataPromise ,added,setAdded}: TechnologiesProp
          }
          </div>
          <div>
-           <YourStack added={added} ></YourStack>
+           <YourStack added={added} setAdded={setAdded}  ></YourStack>
          </div>
         </div>
     )
