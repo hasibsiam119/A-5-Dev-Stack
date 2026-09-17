@@ -3,7 +3,7 @@ export const Footer = () => {
 
     return (
         <>
-            <div className="py-10 ">
+            <div className="py-10 md:hidden ">
                 <div className="flex justify-center">
                     <img src={logo} alt="" />
                 </div>
@@ -33,7 +33,7 @@ export const Footer = () => {
                 </div>
                 <div>
                     <ul>
-                        <li className="font-semibold my-4">PRODUCT</li>
+                        <li className="font-semibold my-4 text-black">PRODUCT</li>
                         <li>Home</li>
                         <li>Technologies</li>
                         <li>Projects</li>
@@ -41,7 +41,7 @@ export const Footer = () => {
                 </div>
                 <div>
                     <ul>
-                        <li className="font-semibold my-4 ">COMPANY</li>
+                        <li className="font-semibold my-4 text-black ">COMPANY</li>
                         <li>About</li>
                         <li>Contact</li>
                         <li>Careers</li>
@@ -49,7 +49,7 @@ export const Footer = () => {
                 </div>
                 <div>
                     <ul>
-                        <li className="font-semibold my-4">LEGAL</li>
+                        <li className="font-semibold my-4 text-black">LEGAL</li>
                         <li>Privacy policy</li>
                         <li>Terms of Service</li>
 
