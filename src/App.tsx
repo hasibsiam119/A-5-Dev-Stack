@@ -20,11 +20,9 @@ const [added, setAdded] = useState<Itechnology[]>([]);
     <>
       <Nav></Nav>
       <Hero></Hero>
-      <Suspense fallback="Loading...">
+      <Suspense fallback= {<div>Loading <span className="loading loading-bars loading-lg"></span></div>}>
         <Technologies technologyDataPromise={technologyDataPromise} added={added} setAdded={setAdded}></Technologies>
       </Suspense>
-
-
       <Footer></Footer>
       <ToastContainer />
     </>

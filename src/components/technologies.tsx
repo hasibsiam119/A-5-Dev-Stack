@@ -19,8 +19,13 @@ const Technologies = ({ technologyDataPromise ,added,setAdded}: TechnologiesProp
 
    
     return (
-        <div className="grid grid-cols-[3fr_1fr] gap-4 container mx-auto">
-        <div className="grid grid-cols-3 gap-5 container mx-auto">
+       <div >
+        <div className="container mx-auto my-4" >
+        <h1 className="text-3xl font-bold my-2 max-md:text-center ">Explore the <span className="bg-linear-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED] bg-clip-text text-transparent "> Technologies </span></h1>
+        <p className="max-md:text-center">Pick one technology per category to build your ideal stack.</p>
+        </div>
+        <div className="grid grid-cols-[3fr_1fr] gap-4 max-md:grid-cols-1 max-md:p-10  container mx-auto my-7">
+        <div className="grid grid-cols-3  gap-5 max-md:grid-cols-1  container mx-auto">
          {
             technologies.map((technology,index)=><TechnologyCard technology={technology} key={index} added={added} setAdded={setAdded} ></TechnologyCard>)
          }
@@ -28,6 +33,7 @@ const Technologies = ({ technologyDataPromise ,added,setAdded}: TechnologiesProp
          <div>
            <YourStack added={added} setAdded={setAdded}  ></YourStack>
          </div>
+        </div>
         </div>
     )
 }

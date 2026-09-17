@@ -33,9 +33,8 @@ const YourStack = ({ added ,setAdded }: YourStackProps) => {
                         <div className=" p-2">{added.map(technology => (
                             <div
                                 key={technology.name}
-                                className="flex items-center justify-between border border-slate-200 rounded-xl px-4 py-3 mb-2 bg-white"
-                            >
-                                {/* Left side */}
+                                className="flex items-center justify-between border border-slate-200 rounded-xl px-4 py-3 mb-2 bg-white" >
+
                                 <div className="flex items-center gap-3">
                                     <img
                                         src={technology.image}
@@ -54,7 +53,7 @@ const YourStack = ({ added ,setAdded }: YourStackProps) => {
                                     </div>
                                 </div>
 
-                                {/* Remove button */}
+
                                 <button
                                     className="text-3xl font-light text-slate-400 hover:text-red-500 transition"
                                     onClick={()=>handleRemoveButton(technology.name)}
