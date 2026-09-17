@@ -15,7 +15,7 @@ const YourStack = ({ added ,setAdded }: YourStackProps) => {
 
     function handleRemoveButton (name:string){
         setAdded(prev => prev.filter(item => item.name !== name ))
-        toast.error(`${name} is Removed`)
+        toast.error(`${name} is removed`)
     }
     function handleRemoveAllButton (){
         setAdded([])

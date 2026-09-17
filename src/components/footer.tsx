@@ -20,7 +20,7 @@ export const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <div className="grid grid-cols-4 container mx-auto  gap-10 py-7 text-gray-500 max-md:hidden">
+            <div className="grid grid-cols-4 max-w-7xl mx-auto  gap-10 py-7 text-gray-500 max-md:hidden">
                 <div className="">
                     <img src={logo} alt="" />
                     <p className="my-5">Curated tools, technologies, and resources for developers building
@@ -58,8 +58,8 @@ export const Footer = () => {
 
 
             </div>
-            <div className="divider container mx-auto"></div>
-            <div className="flex justify-between container mx-auto items-center text-gray-500 my-5 max-md:px-5 max-md:my-0 " >
+            <div className="divider max-w-7xl mx-auto"></div>
+            <div className="flex justify-between max-w-7xl mx-auto items-center text-gray-500 my-5 max-md:px-5 max-md:my-0 " >
                 <div>© 2026 Dev Stack. All rights reserved.</div>
                 <div>
                     <ul className="flex gap-4 max-md:gap-2 max-md:px-5 max-md:my-0">

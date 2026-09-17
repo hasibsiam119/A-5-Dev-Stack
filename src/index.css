@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+
 :root {
   --brand-gradient: linear-gradient(
     to right,

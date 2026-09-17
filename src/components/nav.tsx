@@ -40,7 +40,7 @@ const Nav = () => {
                     <button className="btn btn-active btn-secondary rounded-4xl">Sign Up</button>
                 </div>
             </div>
-            <div className="flex justify-between container mx-auto p-2 items-center  bg-white sticky top-0 z-50 max-md:hidden " >
+            <div className="flex justify-between max-w-7xl mx-auto p-2 items-center  bg-white sticky top-0 z-50 max-md:hidden " >
                 <div>
                     <img src={logo} alt="Logo" />
                 </div>

@@ -3,7 +3,7 @@ import heroImg from "./../assets/banner-stack.png"
 const Hero = () => {
 
     return (
-        <div className="flex justify-between container mx-auto my-9 max-md:flex-col max-md:p-5">
+        <div className="flex justify-between max-w-7xl mx-auto my-9 max-md:flex-col max-md:p-5">
             <div className="my-8">
                 <h1 className="font-extrabold text-[60px] max-md:font-bold max-md:text-5xl max-md:text-center">Build Your Ideal <br />
                     <span className="brand-gradient-text ">Development Stack</span></h1>

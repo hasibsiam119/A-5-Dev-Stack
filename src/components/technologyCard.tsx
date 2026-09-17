@@ -17,7 +17,7 @@ const TechnologyCard = ({ technology ,added,setAdded }: TechnologyCardProps) => 
     return
   }
        setAdded(prev=>[...prev,technology])
-       toast.success(`${technology.name} is selected`)
+       toast.success(`${technology.name} is added`)
     
    
   }
