@@ -4,7 +4,7 @@ DevStack is a React + TypeScript based web application where users can explore d
 
 ## 🌐 Live Demo
 
-🔗 **[\[View Live Project\](\[text\](https://hasib-siam-dev-stack.netlify.app/))](https://hasib-siam-dev-stack.netlify.app/)**
+🔗 **[View Live Project](https://hasib-siam-dev-stack.netlify.app/)**
 
 ## ✨ Features
 
