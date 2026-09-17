@@ -6,7 +6,7 @@ import type { Itechnology } from "./type/type"
 import Technologies from "./components/technologies"
 import { ToastContainer } from "react-toastify"
 
-const technologyDataPromise = async (): Promise<Itechnology[]> => {
+const technologyDataFetch = async (): Promise<Itechnology[]> => {
   const res = await fetch("./../public/data.json")
   const data = await res.json()
   return data
@@ -14,14 +14,14 @@ const technologyDataPromise = async (): Promise<Itechnology[]> => {
 
 function App() {
 const [added, setAdded] = useState<Itechnology[]>([]);
-
+ const [technologyDataPromise] =useState(()=>technologyDataFetch())
 
   return (
     <>
       <Nav></Nav>
       <Hero></Hero>
       <Suspense fallback="Loading...">
-        <Technologies technologyDataPromise={technologyDataPromise()} added={added} setAdded={setAdded}></Technologies>
+        <Technologies technologyDataPromise={technologyDataPromise} added={added} setAdded={setAdded}></Technologies>
       </Suspense>
 
 
